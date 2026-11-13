@@ -257,8 +257,8 @@
         MoodTracker
       </div>
       <div class="lang" role="group" aria-label="Język / Language" hidden>
-        <button type="button" data-set-lang="pl" lang="pl">Polski</button>
         <button type="button" data-set-lang="en" lang="en">English</button>
+        <button type="button" data-set-lang="pl" lang="pl">Polski</button>
       </div>
     </header>
 
@@ -433,7 +433,7 @@
         var switcher = document.querySelector(".lang");
         var titles = { pl: "Polityka prywatności – MoodTracker", en: "Privacy Policy – MoodTracker" };
         var pick = function (value) {
-          return value && value.toLowerCase().indexOf("pl") === 0 ? "pl" : "en";
+          return value && value.toLowerCase().indexOf("pl") === 0 ? "en" : "pl";
         };
 
         var show = function (lang) {
