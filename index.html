@@ -317,6 +317,15 @@
           o awariach aplikacji. Autor wykorzystuje je wyłącznie do poprawiania błędów.
         </p>
 
+        <h2>Zakup i okres próbny</h2>
+        <p>
+          MoodTrackera kupujesz w Microsoft Store, który obsługuje też bezpłatny okres próbny. Płatność i potrzebne do niej
+          dane, np. dane karty, przetwarza wyłącznie Microsoft zgodnie z
+          <a href="https://privacy.microsoft.com/pl-pl/privacystatement" target="_blank" rel="noopener noreferrer">Oświadczeniem Microsoft o ochronie prywatności</a>.
+          Ani aplikacja, ani jej autor nie otrzymują Twoich danych płatniczych. Autor dostaje od Microsoftu tylko zbiorcze
+          informacje o sprzedaży, np. liczbę zakupów.
+        </p>
+
         <h2>Bezpieczeństwo</h2>
         <p>
           Aplikacja nie szyfruje pliku dziennika. Chroni go Twoje konto Windows: kto ma dostęp do tego konta albo do
@@ -398,6 +407,15 @@
           about app crashes. The author uses them only to fix bugs.
         </p>
 
+        <h2>Purchase and free trial</h2>
+        <p>
+          You buy MoodTracker in the Microsoft Store, which also handles the free trial. The payment and the details it
+          needs, such as your card details, are processed only by Microsoft, under the
+          <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank" rel="noopener noreferrer">Microsoft Privacy Statement</a>.
+          Neither the app nor its author receives your payment details. From Microsoft, the author gets only aggregate
+          sales information, such as the number of purchases.
+        </p>
+
         <h2>Security</h2>
         <p>
           The app doesn't encrypt the diary file. It is protected by your Windows account: anyone with access to that
@@ -433,7 +451,7 @@
         var switcher = document.querySelector(".lang");
         var titles = { pl: "Polityka prywatności – MoodTracker", en: "Privacy Policy – MoodTracker" };
         var pick = function (value) {
-          return value && value.toLowerCase().indexOf("pl") === 0 ? "en" : "pl";
+          return value && value.toLowerCase().indexOf("pl") === 0 ? "pl" : "en";
         };
 
         var show = function (lang) {
