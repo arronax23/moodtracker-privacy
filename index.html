@@ -170,6 +170,16 @@
         margin-top: 2px;
       }
 
+      /* The path of the diary file. */
+      code {
+        padding: 1px 5px;
+        border-radius: 4px;
+        background: var(--subtle-fill);
+        font-family: "Cascadia Mono", Consolas, ui-monospace, monospace;
+        font-size: 13.5px;
+        overflow-wrap: anywhere;
+      }
+
       /* Inside the app's dialog, which has its own title. */
       .embedded {
         background: var(--card);
@@ -265,7 +275,7 @@
     <main>
       <article lang="en" data-lang="en">
         <h1>Privacy Policy</h1>
-        <p class="meta">MoodTracker for Windows · effective November 13, 2026</p>
+        <p class="meta">MoodTracker for Windows · effective November 14, 2026</p>
 
         <p class="summary">
           <strong>In short:</strong> everything you record in MoodTracker stays on your computer. The app doesn't send
@@ -287,10 +297,11 @@
 
         <h2>Where it is stored</h2>
         <p>
-          The data is saved in a database file on your computer, in the app data folder of your Windows account. In the
-          same folder, the engine that displays the app's interface (Microsoft Edge WebView2) remembers view settings,
-          such as the chosen language and whether the menu is collapsed. The app uses no cookies for tracking or
-          advertising.
+          The diary is saved in a database file on your computer:
+          <code>C:\Users\&lt;your user name&gt;\MoodTracker\moodTracker.db</code>. Settings → Diary shows its exact
+          location. The engine that displays the app's interface (Microsoft Edge WebView2) remembers view settings, such
+          as the chosen language and whether the menu is collapsed, in the app data folder of your Windows account. The
+          app uses no cookies for tracking or advertising.
         </p>
 
         <h2>What the app sends</h2>
@@ -329,14 +340,20 @@
         <p>
           The app doesn't encrypt the diary file. It is protected by your Windows account: anyone with access to that
           account, or to a copy of its files, can read the diary. Protect your account with a password or PIN, and for
-          stronger protection turn on drive encryption (BitLocker or Device encryption in Windows Settings).
+          stronger protection turn on drive encryption (BitLocker or Device encryption in Windows Settings). The same
+          applies to a diary left on the computer after uninstalling the app and to any copies of the file you make.
         </p>
 
         <h2>Your control over the data</h2>
         <p>
-          Your data is under your control only. In the app you can view, change and delete it. Uninstalling MoodTracker
-          removes its data from the computer, including the whole diary. The author has no copy of your data, so they
-          can't recover it or pass it on to anyone.
+          Your data is under your control only. In the app you can view, change and delete it, and Settings → Diary →
+          Delete diary removes the whole diary from the computer at once.
+        </p>
+        <p>
+          Uninstalling MoodTracker doesn't delete the diary: it stays in the MoodTracker folder of your user folder, so
+          when you install the app again, your entries are back. To uninstall the app together with your data, delete
+          the diary in Settings first, or delete that folder after uninstalling. The author has no copy of your data, so
+          they can't recover it or pass it on to anyone.
         </p>
 
         <h2>Changes to this policy</h2>
@@ -352,7 +369,7 @@
 
       <article lang="pl" data-lang="pl">
         <h1>Polityka prywatności</h1>
-        <p class="meta">MoodTracker na Windows · obowiązuje od 13 listopada 2026 r.</p>
+        <p class="meta">MoodTracker na Windows · obowiązuje od 14 listopada 2026 r.</p>
 
         <p class="summary">
           <strong>W skrócie:</strong> wszystko, co zapisujesz w MoodTrackerze, zostaje na Twoim komputerze. Aplikacja
@@ -375,10 +392,11 @@
 
         <h2>Gdzie są przechowywane</h2>
         <p>
-          Dane zapisują się w pliku bazy danych na Twoim komputerze, w folderze danych aplikacji na Twoim koncie Windows.
-          W tym samym folderze silnik wyświetlający interfejs aplikacji (Microsoft Edge WebView2) zapamiętuje ustawienia
-          widoku, np. wybrany język i to, czy menu jest zwinięte. Aplikacja nie używa plików cookie do śledzenia ani do
-          reklam.
+          Dziennik zapisuje się w pliku bazy danych na Twoim komputerze:
+          <code>C:\Users\&lt;nazwa użytkownika&gt;\MoodTracker\moodTracker.db</code>. Dokładne położenie pokazują
+          Ustawienia → Dziennik. Silnik wyświetlający interfejs aplikacji (Microsoft Edge WebView2) zapamiętuje
+          ustawienia widoku, np. wybrany język i to, czy menu jest zwinięte, w folderze danych aplikacji na Twoim koncie
+          Windows. Aplikacja nie używa plików cookie do śledzenia ani do reklam.
         </p>
 
         <h2>Co aplikacja wysyła</h2>
@@ -417,14 +435,20 @@
         <p>
           Aplikacja nie szyfruje pliku dziennika. Chroni go Twoje konto Windows: kto ma dostęp do tego konta albo do
           kopii jego plików, może odczytać dziennik. Zabezpiecz konto hasłem lub kodem PIN, a dla pełniejszej ochrony
-          włącz szyfrowanie dysku (BitLocker lub szyfrowanie urządzenia w ustawieniach Windows).
+          włącz szyfrowanie dysku (BitLocker lub szyfrowanie urządzenia w ustawieniach Windows). To samo dotyczy
+          dziennika, który zostaje na komputerze po odinstalowaniu aplikacji, i kopii tego pliku, które zrobisz.
         </p>
 
         <h2>Kontrola nad danymi</h2>
         <p>
-          Twoje dane są wyłącznie pod Twoją kontrolą. W aplikacji możesz je przeglądać, zmieniać i usuwać. Odinstalowanie
-          MoodTrackera usuwa z komputera jego dane, w tym cały dziennik. Autor nie ma kopii Twoich danych, więc nie może
-          ich odzyskać ani nikomu przekazać.
+          Twoje dane są wyłącznie pod Twoją kontrolą. W aplikacji możesz je przeglądać, zmieniać i usuwać, a przycisk
+          Ustawienia → Dziennik → Usuń dziennik usuwa z komputera cały dziennik naraz.
+        </p>
+        <p>
+          Odinstalowanie MoodTrackera nie usuwa dziennika: zostaje on w folderze MoodTracker w Twoim folderze
+          użytkownika, więc po ponownej instalacji aplikacji wrócą Twoje wpisy. Jeśli chcesz odinstalować aplikację
+          razem z danymi, najpierw usuń dziennik w Ustawieniach albo po odinstalowaniu usuń ten folder. Autor nie ma
+          kopii Twoich danych, więc nie może ich odzyskać ani nikomu przekazać.
         </p>
 
         <h2>Zmiany tej polityki</h2>
